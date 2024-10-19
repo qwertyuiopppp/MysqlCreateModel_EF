@@ -4,7 +4,9 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet add package Pomelo.EntityFrameworkCore.MySql
 
 
-Scaffold-DbContext "server=localhost;port=3306;user=root;password=jcjc的密码;database=数据库名字" Pomelo.EntityFrameworkCore.MySql -o  jcjc_model -f
+dotnet ef dbcontext scaffold "server=localhost;port=3306;user=root;password=jcjc的密码;database=数据库名字" Pomelo.EntityFrameworkCore.MySql -o  jcjc_model -f
+
+数据库名字" Pomelo.EntityFrameworkCore.MySql -o  jcjc_model -f
 
 参考:https://cloud.tencent.com/developer/article/1390653
 
